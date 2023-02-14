@@ -142,13 +142,13 @@ task.spawn(function()
             
             if Status then
                 if Status == 'IsFriend' and Check(Preferences, 'IdentifyFriends').Toggle == true then
-                    UI_Player.Text = '<font color="#00FF1E">'..NewName..'</font>'
+                    UI_Player.Text = '<font color="#00FF1E"><b><u>'..NewName..'</u></b></font>'
                 elseif Check(Preferences, 'IdentifyFriends').Toggle == false then
                     UI_Player.Text = NewName
                 end
                 
                 if Status == 'IsBlocked' and Check(Preferences, 'IdentifyBlocked').Toggle == true then
-                    UI_Player.Text = '<font color="#FF0000">'..NewName..'</font>'
+                    UI_Player.Text = '<font color="#FF0000"><s>'..NewName..'</s></font>'
                 elseif Check(Preferences, 'IdentifyBlocked').Toggle == false then
                     UI_Player.Text = NewName
                 end
